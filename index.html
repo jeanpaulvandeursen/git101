@@ -1,40 +1,105 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/league.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown>
+				# Git 101
+			</section>
+			<section>
+				<section data-markdown data-background-image="images/linus-Torvalds.jpg" data-background-size="cover"
+					data-background-position="center">
+					<textarea data-template>
+						## Linus Thorvalds
+					</textarea>
+				</section>
+				<section data-markdown data-background-image="images/linux.png" data-background-size="cover"
+					data-background-position="center">
+				</section>
+				<section data-markdown data-background-image="images/angry-nerd.jpg" data-background-size="cover"
+					data-background-position="center">
+					<textarea data-template>
+						<span style="color: red;">*"This adds various garbage that isn't RISC-V specific to generic header files. And by 'garbage," I really mean it. This is stuff that nobody should ever send me, never mind late in a merge window."<br><br>"That thing makes the world actively a worse place to live. It's useless garbage that makes any user incomprehensible, and actively *WORSE* than not using that stupid 'helper."*</span>
+					</textarea>
+				</section>
+			</section>
+			<section>
+				<section data-markdown>
+					<textarea data-template>
+						## The Problem
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						* <span style="font-size: 50%;">1991 (version 0.01): Around 10,000 LOC at its initial release.</span>
+						* <span style="font-size: 50%;">1994 (version 1.0.0): Approximately 176,250 LOC.</span>
+						* <span style="font-size: 50%;">1996 (version 2.0.0): Around 500,000 LOC.</span>
+						* <span style="font-size: 50%;">2001 (version 2.4.0): About 2.4 million LOC.</span>
+						* <span style="font-size: 50%;">2003 (version 2.6.0): About 5.2 million LOC.</span>
+						* <span style="font-size: 50%;">2011 (version 3.0.0): Roughly 15 million LOC.</span>
+						* <span style="font-size: 50%;">2015 (version 4.0.0): Around 19.5 million LOC.</span>
+						* <span style="font-size: 50%;">2016 (version 4.8.0): Approximately 21.3 million LOC.</span>
+						* <span style="font-size: 50%;">2020: About 27.8 million LOC.</span>
+						* <span style="font-size: 50%;">2024 (around version 6.13): Nearly 40 million LOC (39,819,522).</span>
+						* <span style="font-size: 50%;">Early 2025 (version 6.14 release candidate): Just over 40 million LOC (40,063,856).</span>
+					</textarea>
+				</section>
+				<section data-markdown data-background-image="images/cvcs.jpg" data-background-size="cover"
+					data-background-position="center">
+				</section>
+				<section data-markdown data-background-image="images/confused-developer.jpg"
+					data-background-size="cover" data-background-position="center">
+				</section>
+			</section>
+			<section>
+				<section data-markdown>
+					<textarea data-template>
+						## The Solution
+					</textarea>
+				</section>
+				<section data-markdown data-background-image="images/git-birth.jpg" data-background-size="cover"
+					data-background-position="center">
+				</section>
+				<section data-markdown data-background-image="images/dcvs.jpg" data-background-size="cover"
+					data-background-position="center">
+				</section>
+				<section data-markdown>
+					## Built in 10 days
+				</section>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
 </html>
